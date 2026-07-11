@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sitemap — Week 01 Task 04 | FlyRank</title>
+  <meta name="description" content="A minimal portfolio sitemap designed to walk one ideal visitor from landing to believing to taking the one action." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── BACKGROUND CANVAS ── -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">🗺️</span>
+        <span class="brand-text">Portfolio <span class="accent">Sitemap</span></span>
+      </div>
+      <div class="badge">Week 01 · Task 04</div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-label">The one-person journey</div>
+    <h1 class="hero-title">
+      From <span class="gradient-text">Landing</span><br />
+      to <span class="gradient-text">Believing</span><br />
+      to <span class="gradient-text">Acting</span>
+    </h1>
+    <p class="hero-sub">
+      A lean 4-page portfolio that earns its place at every step —
+      nothing added "just because."
+    </p>
+    <div class="scroll-hint">
+      <span>Scroll to explore the map</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ── CLAIM STRIP ── -->
+  <section class="claim-strip">
+    <div class="claim-inner">
+      <div class="claim-label">The Proof Statement</div>
+      <blockquote class="claim-quote">
+        "I help <strong>early-stage founders</strong> go from messy idea to a
+        <strong>launched product</strong> — through design, code, and clarity —
+        in weeks, not months."
+      </blockquote>
+      <div class="claim-action-pill">One Action → <strong>Book a Free Discovery Call</strong></div>
+    </div>
+  </section>
+
+  <!-- ── SITEMAP VISUAL ── -->
+  <section class="sitemap-section">
+    <div class="section-label">The Sitemap</div>
+    <h2 class="section-title">Four Pages. Every One Earns Its Place.</h2>
+
+    <!-- Flow diagram -->
+    <div class="flow-wrapper">
+
+      <!-- Visitor label -->
+      <div class="visitor-node">
+        <div class="visitor-avatar">👤</div>
+        <div class="visitor-label">Ideal Visitor</div>
+        <div class="visitor-sub">Early-stage founder with a product idea</div>
+      </div>
+
+      <div class="flow-connector vertical">
+        <div class="flow-line"></div>
+        <div class="flow-arrow-icon">↓</div>
+      </div>
+
+      <!-- Page 1: Hero / Home -->
+      <div class="page-card" data-page="1" id="page-home">
+        <div class="page-header">
+          <div class="page-number">01</div>
+          <div class="page-tag">Landing</div>
+        </div>
+        <div class="page-icon">🏠</div>
+        <h3 class="page-title">Home / Hero</h3>
+        <p class="page-desc">States the claim above the fold. One headline, one subline, one CTA — "Book a Free Call." Visitor knows in 5 seconds if they're in the right place.</p>
+        <div class="page-why">
+          <strong>Why it's here:</strong> Makes the promise, qualifies the visitor, triggers the journey.
+        </div>
+        <div class="page-elements">
+          <span class="el-tag">Headline</span>
+          <span class="el-tag">Subheadline</span>
+          <span class="el-tag">Primary CTA</span>
+          <span class="el-tag">Nav</span>
+        </div>
+      </div>
+
+      <div class="flow-connector horizontal-group">
+        <div class="branch-line left"></div>
+        <div class="branch-center">
+          <div class="flow-line short"></div>
+          <div class="flow-arrow-icon">↓</div>
+        </div>
+        <div class="branch-line right"></div>
+      </div>
+
+      <!-- Page 2: Work / Case Studies -->
+      <div class="page-card featured" data-page="2" id="page-work">
+        <div class="page-header">
+          <div class="page-number">02</div>
+          <div class="page-tag">Proof</div>
+        </div>
+        <div class="page-icon">💼</div>
+        <h3 class="page-title">Work / Case Studies</h3>
+        <p class="page-desc">2–3 tight case studies showing the transformation: problem → approach → outcome. Each study ends with a soft CTA back to the one action.</p>
+        <div class="page-why">
+          <strong>Why it's here:</strong> Proof is the only thing that converts skeptics. Claims without evidence are noise.
+        </div>
+        <div class="page-elements">
+          <span class="el-tag">Case Study 1</span>
+          <span class="el-tag">Case Study 2</span>
+          <span class="el-tag">Results Metrics</span>
+          <span class="el-tag">Inline CTA</span>
+        </div>
+      </div>
+
+      <div class="flow-connector vertical">
+        <div class="flow-line"></div>
+        <div class="flow-arrow-icon">↓</div>
+      </div>
+
+      <!-- Pages 3 & 4 side by side -->
+      <div class="pages-row">
+
+        <div class="page-card" data-page="3" id="page-about">
+          <div class="page-header">
+            <div class="page-number">03</div>
+            <div class="page-tag">Trust</div>
+          </div>
+          <div class="page-icon">🧑‍💻</div>
+          <h3 class="page-title">About</h3>
+          <p class="page-desc">Short. Who I am, why I do this, and why I'm the right person. One photo. Ends with a CTA.</p>
+          <div class="page-why">
+            <strong>Why it's here:</strong> People hire people, not portfolios. Humanity closes deals.
+          </div>
+          <div class="page-elements">
+            <span class="el-tag">Origin Story</span>
+            <span class="el-tag">Skills Snapshot</span>
+            <span class="el-tag">CTA Link</span>
+          </div>
+        </div>
+
+        <div class="pages-connector">
+          <div class="connector-line"></div>
+        </div>
+
+        <div class="page-card action-card" data-page="4" id="page-contact">
+          <div class="page-header">
+            <div class="page-number">04</div>
+            <div class="page-tag primary-tag">The Action</div>
+          </div>
+          <div class="page-icon">🚀</div>
+          <h3 class="page-title">Contact / Book</h3>
+          <p class="page-desc">One form. One purpose: book the free discovery call. No distractions, no social links in the way. Confirmation message sets expectations.</p>
+          <div class="page-why">
+            <strong>Why it's here:</strong> This is the entire point. Every other page leads here.
+          </div>
+          <div class="page-elements">
+            <span class="el-tag">Contact Form</span>
+            <span class="el-tag">Calendly / Link</span>
+            <span class="el-tag">Confirmation</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Goal achieved -->
+      <div class="flow-connector vertical">
+        <div class="flow-line"></div>
+        <div class="flow-arrow-icon">↓</div>
+      </div>
+
+      <div class="goal-node">
+        <div class="goal-icon">✅</div>
+        <div class="goal-title">Goal Achieved</div>
+        <div class="goal-sub">Visitor booked a free discovery call</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PAGES NOT INCLUDED ── -->
+  <section class="excluded-section">
+    <div class="section-label">Intentionally Excluded</div>
+    <h2 class="section-title">Pages We Chose NOT to Add</h2>
+    <p class="excluded-sub">Every page must earn its place against the claim and the one action. These were cut.</p>
+
+    <div class="excluded-grid">
+      <div class="excluded-card">
+        <div class="ex-icon">📝</div>
+        <div class="ex-title">Blog / Articles</div>
+        <div class="ex-reason">Distracts from the action. Founders come to hire, not to read. Can be added later if SEO becomes a goal.</div>
+      </div>
+      <div class="excluded-card">
+        <div class="ex-icon">💰</div>
+        <div class="ex-title">Pricing Page</div>
+        <div class="ex-reason">Price is revealed on the discovery call — that's the whole point of booking it. Showing it early kills curiosity.</div>
+      </div>
+      <div class="excluded-card">
+        <div class="ex-icon">🛒</div>
+        <div class="ex-title">Services / Packages</div>
+        <div class="ex-reason">Merged into the Hero and About pages as light copy. A standalone page adds friction and splits focus.</div>
+      </div>
+      <div class="excluded-card">
+        <div class="ex-icon">📰</div>
+        <div class="ex-title">Press / Media Kit</div>
+        <div class="ex-reason">Not relevant to the stage. Founders need proof of outcomes, not press mentions.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRESSURE TEST SECTION ── -->
+  <section class="pressure-section">
+    <div class="section-label">Claude Project — Pressure Test</div>
+    <h2 class="section-title">The Prompt That Challenged the Map</h2>
+
+    <div class="prompt-card">
+      <div class="prompt-label">📤 Prompt Sent to Claude</div>
+      <div class="prompt-text">
+        <p>I'm building a personal portfolio. My proof statement is:</p>
+        <em>"I help early-stage founders go from messy idea to a launched product — through design, code, and clarity — in weeks, not months."</em>
+        <p>My one action is: <strong>Book a Free Discovery Call.</strong></p>
+        <p>My proposed sitemap has exactly 4 pages: Home/Hero → Work/Case Studies → About → Contact/Book.</p>
+        <p>Please pressure-test this sitemap against my proof statement and my one action. Tell me:</p>
+        <ol>
+          <li>Does every page directly support moving the visitor toward booking a call?</li>
+          <li>Is there anything missing that could cause a drop-off?</li>
+          <li>Is there anything present that doesn't earn its place?</li>
+          <li>What is the one thing I should change or add?</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="response-card">
+      <div class="response-label">🤖 Claude's Response (Summary)</div>
+      <div class="response-text">
+        <p><strong>✅ What Works:</strong> The 4-page flow is tight. Every page has a clear job and the single CTA direction (book a call) is consistent. No page contradicts the claim.</p>
+
+        <p><strong>⚠️ Potential Drop-off Risk:</strong> Visitors who arrive on the Work page directly (via search or share) may not have seen the Hero promise. Each case study should open with a one-line reminder of who you help and why.</p>
+
+        <p><strong>🚫 What Doesn't Earn Its Place:</strong> If your Contact page has a long form (more than 3 fields), it creates friction. The one action should feel like a single tap, not an interview.</p>
+
+        <p><strong>💡 One Thing to Change:</strong> Add a <em>micro-testimonial strip</em> between the Hero and Work sections — a single line quote from a past client anchors credibility before the visitor even reaches the case studies. This doesn't require a new page; it's a section within Home.</p>
+      </div>
+    </div>
+
+    <div class="change-noted">
+      <div class="change-icon">📌</div>
+      <div class="change-content">
+        <div class="change-title">Change I'll Make (Noted from Pressure Test)</div>
+        <div class="change-desc">Add a 1–2 line micro-testimonial strip on the Home page between the Hero headline and the Work section. No new page — just a trust anchor inline. Also trim the Contact form to max 3 fields: Name, Email, "What's your product idea?" (one sentence).</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLAUDE PROJECT SETUP ── -->
+  <section class="claude-section">
+    <div class="section-label">Claude Project Setup</div>
+    <h2 class="section-title">How to Configure Your Claude Project</h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Create the Project</div>
+          <div class="step-desc">Go to <strong>claude.ai</strong> → Click <strong>"Projects"</strong> → <strong>"New Project"</strong>. Name it: <em>"[Your Name] Portfolio Build — 8 Weeks"</em></div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Paste Custom Instructions</div>
+          <div class="step-desc">In "Project Instructions" paste your proof statement, your one action, and this line: <em>"Act as my tutor and strategic thinking partner for this 8-week portfolio build."</em></div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Run the Pressure Test</div>
+          <div class="step-desc">Copy the prompt from the section above and paste it as your first message inside the new project. Save the response.</div>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Note One Change</div>
+          <div class="step-desc">From Claude's answer, write down at least one thing you'll revise in your sitemap. This shows active thinking, not passive reading.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">🗺️ Portfolio Sitemap · Week 01 Task 04</div>
+      <div class="footer-meta">FlyRank AI Fluency Track · 2025</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
