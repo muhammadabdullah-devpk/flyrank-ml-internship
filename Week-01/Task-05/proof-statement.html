@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Proof Statement – Muhammad Abdullah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0b0f1a;
+      --surface: #131929;
+      --card: #1a2235;
+      --accent: #6c63ff;
+      --accent2: #00d4ff;
+      --gold: #ffd166;
+      --text: #e8eaf0;
+      --muted: #8892a4;
+      --border: rgba(108,99,255,0.18);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .wrapper {
+      max-width: 780px;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2.8rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #fff 30%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2.2rem;
+      margin-bottom: 1.4rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(108,99,255,0.15);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+
+    .card-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .proof-text {
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .proof-text strong {
+      color: var(--accent2);
+      font-weight: 600;
+    }
+
+    .why-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--muted);
+      font-style: italic;
+      border-left: 3px solid var(--gold);
+      padding-left: 1.1rem;
+    }
+
+    .why-text strong {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1db954, #0f9b47);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.7rem;
+      margin-top: 1px;
+    }
+
+    .checklist li strong {
+      color: var(--text);
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, rgba(108,99,255,0.12), rgba(0,212,255,0.08));
+      border: 1px solid rgba(108,99,255,0.3);
+      border-radius: 16px;
+      padding: 1.6rem 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-text { font-size: 0.95rem; color: var(--muted); }
+    .cta-text strong { display: block; color: var(--text); font-size: 1rem; margin-bottom: 0.2rem; }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      transition: opacity 0.2s, transform 0.2s;
+      white-space: nowrap;
+    }
+
+    .cta-btn:hover { opacity: 0.88; transform: scale(1.03); }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 520px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .cta-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="badge">🚀 FlyRank · Week 01 · Task 05</div>
+    <h1>Portfolio Proof Statement</h1>
+    <p class="subtitle">Muhammad Abdullah — AI/ML Developer</p>
+  </div>
+
+  <div class="card">
+    <div class="card-label"><span>📌</span> One-Paragraph Proof Statement</div>
+    <p class="proof-text">
+      I am <strong>Muhammad Abdullah</strong>, a 21-year-old Computer Science student from Lahore who can
+      <strong>build working NLP and AI systems in Python</strong> — from fine-tuning BERT models on real datasets
+      to deploying intelligent chatbots with intent recognition. I have done this not in theory but in
+      <strong>shipped, documented projects</strong>: a BERT-based news classifier with Gradio inference,
+      an LLM auto-tagging system, a university AI chatbot, and a full cloud storage portal on AWS —
+      all live on GitHub. This statement is for a
+      <strong>technical hiring manager or startup CTO in Pakistan's software industry</strong>
+      who needs a junior AI/ML developer that hits the ground running without months of hand-holding.
+      The one thing I want you to do:
+      <strong>open my GitHub, run one project, and then email me.</strong>
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-label"><span>💡</span> One-Line Why</div>
+    <p class="why-text">
+      My CV lists tools and internships, but it <strong>cannot show you that my code actually runs</strong> —
+      this portfolio exists to prove it does.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-label"><span>✅</span> Pass / Revise Checklist</div>
+    <ul class="checklist">
+      <li>
+        <div class="check">✓</div>
+        <span><strong>One primary claim named</strong> — NLP &amp; AI systems in Python (not "I'm creative")</span>
+      </li>
+      <li>
+        <div class="check">✓</div>
+        <span><strong>Specific audience</strong> — Startup CTO / hiring manager in Pakistan's tech industry</span>
+      </li>
+      <li>
+        <div class="check">✓</div>
+        <span><strong>Single most important action</strong> — Open GitHub → run a project → email me</span>
+      </li>
+      <li>
+        <div class="check">✓</div>
+        <span><strong>Could only describe YOUR proof</strong> — Projects are specific to Abdullah's real work</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cta-box">
+    <div class="cta-text">
+      <strong>📬 Ready to connect?</strong>
+      Open GitHub, run a project, then reach out.
+    </div>
+    <a href="mailto:meharabdullah4337@gmail.com" id="email-cta" class="cta-btn">
+      ✉️ Email Muhammad Abdullah
+    </a>
+  </div>
+
+  <div class="footer" style="margin-top:1.5rem;">
+    Muhammad Abdullah · Lahore ·
+    <a href="https://github.com/muhammadabdullah-devpk" style="color: var(--accent2); text-decoration:none;">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/muhammad-abdullah-devpk" style="color: var(--accent2); text-decoration:none;">LinkedIn</a>
+  </div>
+
+</div>
+</body>
+</html>
