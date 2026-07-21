@@ -1,7 +1,8 @@
 # Week 03 · Task 03: Kill Your Darlings — Curate Your Images
 **Track Thread Deliverable | FlyRank AI Internship**  
-**Author**: Muhammad Abdullah (ML & NLP Engineer | Lahore, Pakistan)  
-**Repository**: [muhammadabdullah-devpk/flyrank-ml-internship](https://github.com/muhammadabdullah-devpk/flyrank-ml-internship)  
+**Author**: Muhammad Abdullah (AI & Machine Learning Engineer | BSCS Student, Lahore Garrison University)  
+**Personal Portfolio**: [muhammadabdullah-portfolio-mu.vercel.app](https://muhammadabdullah-portfolio-mu.vercel.app/)  
+**GitHub Repository**: [muhammadabdullah-devpk/flyrank-ml-internship](https://github.com/muhammadabdullah-devpk/flyrank-ml-internship)  
 **Identity Kit Tokens**: Geist Mono + Geist | `#09090B` Near-Black | `#FAFAFA` Near-White | `#71717A` Muted Zinc | `#0F766E` Accent Teal
 
 ---
@@ -12,15 +13,15 @@
 
 ## 1. Content Map to Image Need Inventory
 
-Matching the content map built in Week 3 Task 1 & 2, here is the complete inventory of visual assets required for the portfolio, categorized by content type and generation choice:
+Matching the content map built in Week 3 Task 1 & 2 and verified against the live portfolio (`muhammadabdullah-portfolio-mu.vercel.app`), here is the complete inventory of visual assets required for the portfolio:
 
 | Section / Placement | Image Purpose & Need | Source Call | Chosen Format / File | Rationale |
 | :--- | :--- | :--- | :--- | :--- |
-| **Hero / Bio Section** | Personal introduction of Muhammad Abdullah (ML Engineer) | **Real Photo** | `profile_headshot_real.png` | Subject is the person; real headshot establishes authentic developer identity. |
-| **Hero Background** | Subtle background texture framing the hero claim | **AI Generated** | `hero_texture_ai_keeper.png` | Connective tissue; quiet dark zinc vector grid matching `#0F766E` identity. |
+| **Hero / Bio Section** | Personal introduction of Muhammad Abdullah (AI/ML Engineer) | **Real Photo** | `profile_headshot_real.png` | Subject is the person; real photograph of Muhammad Abdullah establishes authentic developer identity. |
+| **Hero Background** | Subtle background texture framing the hero claim | **AI Generated** | `hero_texture_ai_keeper.png` | Connective tissue; quiet dark zinc vector grid matching `#0F766E` identity kit tokens. |
 | **Case Study 01** | Content Decay & Opportunity Scoring (Random Forest) | **Real Capture** | `case1_content_decay_real_capture.png` | Proof of work; cropped VS Code/Jupyter notebook showing features & 74% Precision@50 PR curve. |
 | **Case Study 02** | Bilingual BERT News Classifier (PyTorch + Gradio) | **Real Capture** | `case2_bert_classifier_real_capture.png` | Proof of work; real Gradio UI classification output & 91% F1-score metric banner. |
-| **Case Study 03** | Intent-Recognition University Chatbot (Rasa NLP) | **Real Capture** | `case3_rasa_chatbot_real_capture.png` | Proof of work; terminal intent classification JSON & chat interaction automated query log. |
+| **Case Study 03** | LGU Smart Portal AI Chatbot (Rasa NLP / LGU Student Automation) | **Real Capture** | `case3_rasa_chatbot_real_capture.png` | Proof of work; real capture of Lahore Garrison University chatbot showing intent classification & automated queries. |
 | **System Iconography** | Section headers (Pipeline, NLP, Metrics, Code) | **AI Generated** | `icon_set_ai_keeper.png` | Connective tissue; 4-piece minimalist line-art vector icon set in steady teal/zinc style. |
 
 ---
@@ -32,8 +33,8 @@ Below are the 6 keeper images selected to serve the portfolio's proof statement 
 ### 2.1 Developer Profile Headshot (Real Photo)
 - **File**: `images/profile_headshot_real.png`
 - **Call**: Real Photo (No AI Stand-in)
-- **Role**: Hero Bio & Identity section
-- **Description**: Natural, professional photo of Muhammad Abdullah. Clean lighting, neutral backdrop. Establishes genuine human accountability behind the code and models.
+- **Role**: Hero Bio & Personal Identity
+- **Description**: Authentic, high-resolution portrait photograph of Muhammad Abdullah (BSCS student and AI/ML Engineer at Lahore Garrison University). Clean studio lighting, professional attire. Establishes genuine human accountability behind the code and models.
 
 ![Profile Headshot](images/profile_headshot_real.png)
 
@@ -59,11 +60,11 @@ Below are the 6 keeper images selected to serve the portfolio's proof statement 
 
 ---
 
-### 2.4 Case Study 3: Intent-Recognition University Chatbot (Real Capture)
+### 2.4 Case Study 3: LGU Smart Portal AI Chatbot (Real Capture)
 - **File**: `images/case3_rasa_chatbot_real_capture.png`
 - **Call**: Real Screenshot of Work
 - **Role**: Proof visual for Case Study 03
-- **Description**: High-legibility screenshot of Rasa NLP CLI terminal logs showing custom intent classification JSON (`ask_fee_structure` confidence: 0.98) and local web chat preview demonstrating **80% query automation**.
+- **Description**: High-legibility screenshot of the LGU Smart Portal AI Chatbot (built for Lahore Garrison University) showing intent classification JSON output (`intent`: `ask_fee_structure`, confidence: `0.98`), custom fallback handlers, and automated query response logs demonstrating **80% query automation**.
 
 ![Case 3 Real Capture](images/case3_rasa_chatbot_real_capture.png)
 
@@ -94,8 +95,8 @@ Below are the 6 keeper images selected to serve the portfolio's proof statement 
 Why did we choose real captures for 100% of the project proof sections?
 
 1. **Recruiter Credibility Bar**: In machine learning and software engineering, recruiters and technical leads scan portfolios for real code, realistic metric plots, and working interfaces. A generated illustration of a "glowing AI brain" conveys zero technical competence; a cropped Jupyter notebook snippet showing feature importance and Precision@50 proves hands-on execution.
-2. **Authenticity over Visual Hype**: Decorative AI images often produce impossible or gibberish code syntax, fake floating metrics, and hyper-saturated gradients that signal "all polish, no substance." Real captures of PyTorch training scripts, Rasa intent configurations, and Gradio UIs anchor the engineer's claims in verifiable artifacts.
-3. **Personal Identity**: For personal headshots, AI avatars (e.g., stylized digital portraits or anime renders) read as evasive or juvenile. A clean real photograph projects professional confidence and accountability.
+2. **Authenticity over Visual Hype**: Decorative AI images often produce impossible or gibberish code syntax, fake floating metrics, and hyper-saturated gradients that signal "all polish, no substance." Real captures of PyTorch training scripts, Rasa intent configurations, LGU Smart Portal Chatbot logs, and Gradio UIs anchor the engineer's claims in verifiable artifacts.
+3. **Personal Identity**: For personal headshots, AI avatars (e.g., stylized digital portraits or anime renders) read as evasive or juvenile. Muhammad Abdullah's real photograph projects professional confidence and accountability.
 
 ---
 
@@ -148,7 +149,7 @@ Curating ruthlessly means actively binning images that fail to serve the work. B
 ![Rejected Cyberpunk Robot](images/rejected_ai_slop_2_glowing_robot.png)
 
 > **Rejection Rationale**:  
-> **Cliché & Brand Misalignment**: Sci-fi robot faces are the hallmark of amateur AI portfolios. Muhammad Abdullah builds practical NLP models (BERT text classification, Rasa intent parsing), not humanoid robotics. Placing a glowing cyborg head next to a Bilingual BERT news classifier creates a false, gimmicky impression and undermines technical credibility. Furthermore, the harsh cyan glow breaks our muted teal (`#0F766E`) palette. **Binning decision**: Rejected for sci-fi cliché and brand incompatibility.
+> **Cliché & Brand Misalignment**: Sci-fi robot faces are the hallmark of amateur AI portfolios. Muhammad Abdullah builds practical NLP models (BERT text classification, LGU Smart Portal chatbot automation), not humanoid robotics. Placing a glowing cyborg head next to a Bilingual BERT news classifier creates a false, gimmicky impression and undermines technical credibility. Furthermore, the harsh cyan glow breaks our muted teal (`#0F766E`) palette. **Binning decision**: Rejected for sci-fi cliché and brand incompatibility.
 
 ---
 
@@ -156,11 +157,11 @@ Curating ruthlessly means actively binning images that fail to serve the work. B
 
 | Criteria | Status | Evidence / Implementation Details |
 | :--- | :---: | :--- |
-| **Images map to real needs** | **PASS** | Every image matches an explicit slot in the Week 3 Content Map (Bio, Hero, Case 1, Case 2, Case 3, System Icons). |
-| **Work shown with real captures** | **PASS** | Case 1, 2, and 3 use cropped, legible screenshots of actual code, Gradio UI, evaluation plots, and Rasa terminal logs. |
+| **Images map to real needs** | **PASS** | Every image matches an explicit slot in the Week 3 Content Map (Bio, Hero, Case 1, Case 2, Case 3 LGU Chatbot, System Icons). |
+| **Work shown with real captures** | **PASS** | Case 1, 2, and 3 use cropped, legible screenshots of actual code, Gradio UI, evaluation plots, and LGU Chatbot Rasa logs. |
 | **Consistent AI style (a set, not a pile)** | **PASS** | All AI connective tissue locked to Geist identity kit tokens (`#09090B` slate, `#0F766E` teal line art, zero 3D glass). |
-| **Real photo for person subject** | **PASS** | `profile_headshot_real.png` used for developer headshot; AI avatars explicitly rejected. |
+| **Real photo for person subject** | **PASS** | `profile_headshot_real.png` contains Muhammad Abdullah's actual photograph; AI avatars explicitly rejected. |
 | **Genuine discernment rejection notes** | **PASS** | Rejection notes evaluate visual hierarchy, glare noise, brand misalignment, and AI slop characteristics. |
 
 ---
-*Deliverable complete. Ready for track thread submission.*
+*Deliverable updated with real developer photo and LGU Smart Portal Chatbot integration. Ready for track thread submission.*
