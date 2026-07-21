@@ -1,7 +1,6 @@
 # FlyRank AI Internship — Portal Submission
 **Week 03 · Task 04: The Through Line — Portfolio Content Map & One-Line Claim**
 **Student**: Muhammad Abdullah (AI & Machine Learning Engineer | Lahore Garrison University | Lahore, Pakistan)  
-**Live Vercel Portfolio**: [muhammadabdullah-portfolio-mu.vercel.app](https://muhammadabdullah-portfolio-mu.vercel.app/)  
 **Track Thread Link**: [Week 03 Task 04 Deliverable](content_map_track_thread.md)  
 **Repository**: [muhammadabdullah-devpk/flyrank-ml-internship](https://github.com/muhammadabdullah-devpk/flyrank-ml-internship)
 
@@ -13,11 +12,11 @@
 
 ---
 
-## 2. Content Map Summary (Aligned with Live Portfolio)
+## 2. Content Map Summary
 
-- **Page 1: Landing Page (`index.html` / Vercel Live App)**
+- **Page 1: Landing Page (`index.html` / Live Portfolio)**
   - **Section 01**: Hero & Identity Header (One-Line Claim + Bio + Capabilities Matrix + Metrics) ➔ CTA: *"View My Work ↓"* & *"Contact Me"*
-  - **Section 02**: About & Education (BSCS at Lahore Garrison University) ➔ CTA: *"Read Technical Experience ↓"*
+  - **Section 02**: Academic Background (BSCS at Lahore Garrison University) ➔ CTA: *"Read Technical Experience ↓"*
   - **Section 03 (Lead Work)**: Case Study 01: Content Decay Engine (74% P@50) ➔ CTA: *"Inspect Content Decay Code on GitHub"*
   - **Section 04**: Case Study 02: Bilingual BERT News Classifier (91% F1) ➔ CTA: *"Test Live Model on HuggingFace"*
   - **Section 05**: Case Study 03: Intent-Recognition Rasa Chatbot (80% Auto) ➔ CTA: *"View Rasa Config & Intent Schema"*
@@ -48,5 +47,5 @@
 
 - [x] **A single, memorable claim, not a paragraph** (1 sentence, zero fluff).
 - [x] **Every page has ordered sections and a named call to action; strongest work leads** (Case 01 leads).
-- [x] **Calls to action ladder up to Chapter 1 action** ("Open live Vercel portfolio / GitHub repo ➔ email Abdullah").
+- [x] **Calls to action ladder up to Chapter 1 action** ("Open live portfolio / GitHub repo ➔ email Abdullah").
 - [x] **Gather-list is honest so build week isn't blocked**.
