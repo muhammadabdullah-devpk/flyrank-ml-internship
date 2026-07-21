@@ -1,6 +1,6 @@
 # Portal Submission Form Content
 **Week 03 Assignment**: Kill Your Darlings — Curate Your Images  
-**Student**: Muhammad Abdullah (ML & NLP Engineer | Lahore, Pakistan)  
+**Student**: Muhammad Abdullah (AI & Machine Learning Engineer | BSCS Student, Lahore Garrison University)  
 
 ---
 
@@ -20,16 +20,17 @@ https://github.com/muhammadabdullah-devpk/flyrank-ml-internship/tree/main/Week-0
 ```text
 Week 3 · Task 3: Kill Your Darlings — Curate Your Images Submission
 
-Track: Machine Learning & NLP Engineer
-Student: Muhammad Abdullah (Lahore, Pakistan)
+Track: AI & Machine Learning Engineer
+Student: Muhammad Abdullah (Lahore Garrison University, Pakistan)
+Personal Portfolio: https://muhammadabdullah-portfolio-mu.vercel.app/
 Repository: https://github.com/muhammadabdullah-devpk/flyrank-ml-internship
 
 Summary of Curation Calls & Discernment:
-1. Real Photo for Personal Identity: Used a natural, professional headshot photo (profile_headshot_real.png) for the hero/bio section. Rejected AI avatars to establish authentic human accountability behind the code and models.
+1. Real Photo for Personal Identity: Used Muhammad Abdullah's authentic headshot photo (profile_headshot_real.png) for the hero/bio section. Rejected AI avatars to establish genuine human accountability behind the code and models.
 2. Real Captures for Work Proof (100% Real):
    - Case 01 (Content Decay Random Forest): Real cropped screenshot of VS Code/Jupyter code, GSC feature matrix, and 74% Precision@50 PR curve.
    - Case 02 (Bilingual BERT Classifier): Real cropped screenshot of the Gradio UI and 91% F1-score confusion matrix across 8 news categories.
-   - Case 03 (Intent-Recognition Chatbot): Real cropped screenshot of Rasa NLP CLI terminal intent logs ('ask_fee_structure' 0.98 confidence) and interactive web chat preview (80% query automation).
+   - Case 03 (LGU Smart Portal AI Chatbot): Real cropped screenshot of LGU Smart Portal Chatbot intent logs ('ask_fee_structure' 0.98 confidence) and automated query preview (80% query automation).
 3. Consistent AI Connective Tissue: Locked AI hero background texture and 4-piece technical icon set to a single minimal 2D vector style matching identity kit tokens (#0F766E accent teal, #09090B slate, #FAFAFA background, zero 3D glass glare).
 4. Ruthless Curation & Rejection Notes (Graded Discernment):
    - Rejected Candidate 01 (3D Glossy "Melted Glass" Brain): Binned for high visual noise, excessive glare filaments, and distracting over-rendered reflections that violate visual hierarchy.
