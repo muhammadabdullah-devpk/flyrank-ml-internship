@@ -1,7 +1,8 @@
 # Claude Project Context & Loaded Assets Bundle
 **Developer:** Muhammad Abdullah  
-**Role:** Applied Machine Learning & Search Intelligence Intern  
+**Role:** AI & Machine Learning Engineer (BSCS Student, Lahore Garrison University)  
 **Program:** FlyRank AI Internship (Week 04 — Build Preparation)  
+**Live Portfolio URL:** https://muhammadabdullah-portfolio-mu.vercel.app/  
 
 ---
 
@@ -12,17 +13,16 @@
 
 ### Brand System & Style Tokens
 - **Typography:**
-  - Headings & Branding: `Geist Mono` / `Fira Code` (Technical, precision-first)
-  - Body Text: `Geist` / `Inter` (Clean, highly readable)
-- **Color Palette (Dark Obsidian Theme):**
+  - Headings & Branding: `Geist Mono` / `Fira Code` / `Outfit`
+  - Body Text: `Geist` / `Inter` / `Manrope`
+- **Color Palette (Dark Cyber Theme):**
   - Background: `#09090b` (Obsidian Base)
-  - Surface Cards: `#121318` (Dark Glass Surface)
-  - Primary Accent: `#0f766e` (Deep Teal)
-  - Highlight Accent: `#14b8a6` / `#34d399` (Emerald / Bright Mint)
+  - Surface Cards: Glassmorphism (`rgba(255, 255, 255, 0.05)`)
+  - Primary Accent: `#06b6d4` (Cyan 500)
+  - Secondary Accent: `#3b82f6` (Blue 500)
   - Text Primary: `#f4f4f5` (Zinc 100)
-  - Text Muted: `#a1a1aa` (Zinc 400)
-  - Borders: `#27272a` (Zinc 800)
-- **Logo Wordmark:** `<M.A/> M. ABDULLAH · ML & NLP ENGINEER`
+  - Text Muted: `#9ca3af` (Gray 400)
+- **Logo Wordmark:** `M. Abdullah Portfolio`
 
 ---
 
@@ -33,7 +33,7 @@
 - **Data & Scale:** ~79 Million rows search analytics warehouse queried via DuckDB.
 - **Baseline Rule:** Hand-crafted heuristic rule achieved **Precision@50 ≈ 0.24**.
 - **Learned Model:** Supervised Random Forest / Logistic Classifier trained on historical impression, position, and click decay features achieved **Precision@50 ≈ 0.74** (~3.1x lift over baseline).
-- **Business Impact:** Prioritizes high-opportunity URLs for editorial refresh, maximizing organic search traffic recovery with 74% top-tier precision.
+- **Business Impact:** Prioritizes high-opportunity URLs for editorial refresh, maximizing organic search traffic recovery.
 
 ### Case Study 2: LGU Smart Portal Chatbot & Intent Classification Pipeline
 - **Problem Statement:** Educational institution needed automated student query routing to reduce support ticket backlogs and answer campus services inquiries instantly.
@@ -44,39 +44,15 @@
 
 ## 3. Portfolio Sitemap & Content Map
 
-```
-Ideal Visitor: Engineering Manager / Founder / Recruiter
-       │
-       ▼
-┌──────────────┐
-│  01. HERO    │ ──► States Claim, Live Status, Tech Stack, & Direct Action CTA
-└──────┬───────┘
-       │
-       ├────────────────────────┐
-       ▼                        ▼
-┌──────────────┐       ┌──────────────┐
-│  02. SEARCH  │       │  03. CHATBOT │
-│  ML MODEL    │       │  NLP SYSTEM  │
-└──────┬───────┘       └──────┬───────┘
-       │                        │
-       └────────────────────────┘
-                   │
-                   ▼
-        ┌──────────────────────┐
-        │  04. LIVE DEMOS &    │
-        │  CODE REPOSITORIES   │
-        └──────────────────────┘
-```
-
-- **Page 1 (Home / Hero):** Claim statement, live status, quick stack breakdown, proof links.
+- **Page 1 (Home / Hero):** Hi, I'm M. Abdullah — BSCS Student at LGU & AI/ML Engineer. System status: Training BERT classification model (98% validation accuracy).
 - **Page 2 (Search ML Model):** Detailed breakdown of 79M row DuckDB pipeline, baseline vs ML Precision@50 metric charts, feature importance.
 - **Page 3 (LGU Chatbot):** NLP classification architecture, sample response benchmarks, system workflow.
-- **Page 4 (Interactive Demos & Repos):** GitHub links (`muhammadabdullah-devpk/flyrank-ml-internship`), Colab notebook badges, downloadable Markdown model reports.
+- **Page 4 (Live Demos & Code Repos):** GitHub links (`muhammadabdullah-devpk/flyrank-ml-internship`), Colab notebook badges, Vercel live app links.
 
 ---
 
 ## 4. Environment & Hosting Specifications
-- **Stack:** Code with AI (Plain HTML5, Vanilla CSS3, JS)
-- **Live Host:** GitHub Pages / Netlify
-- **Live URL:** `https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/`
-- **Backend Status:** Not needed (Static architecture for instant edge loading and zero downtime)
+- **Stack:** Next.js / React + Tailwind CSS (Vercel) / Plain HTML5 & CSS3 (GitHub Pages)
+- **Live URL:** `https://muhammadabdullah-portfolio-mu.vercel.app/`
+- **Secondary URL:** `https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/`
+- **Backend Status:** Not needed at launch (Static pre-rendering for instant loading and zero downtime)

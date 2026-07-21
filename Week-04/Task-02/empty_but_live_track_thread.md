@@ -2,47 +2,49 @@
 
 **Intern:** Muhammad Abdullah  
 **Track:** Machine Learning & Search Intelligence  
-**Repository:** [muhammadabdullah-devpk/flyrank-ml-internship](https://github.com/muhammadabdullah-devpk/flyrank-ml-internship)  
-**Live URL:** [https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/](https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/)  
+**Role:** AI & Machine Learning Engineer (BSCS Student, Lahore Garrison University)  
+**Primary Live Portfolio URL:** [https://muhammadabdullah-portfolio-mu.vercel.app/](https://muhammadabdullah-portfolio-mu.vercel.app/)  
+**GitHub Repository URL:** [https://github.com/muhammadabdullah-devpk/flyrank-ml-internship](https://github.com/muhammadabdullah-devpk/flyrank-ml-internship)  
+**GitHub Pages URL:** [https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/](https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/)  
 
 ---
 
 ## 1. Live Reachable URL & Proof
 
-The starter project has been created, deployed, and verified live on a public domain.
+The project has been established and verified live on a public domain across global CDN nodes.
 
-- **Live URL:** `https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/`
+- **Primary Production URL:** `https://muhammadabdullah-portfolio-mu.vercel.app/`
 - **HTTP Status:** `200 OK`
-- **Second Device Verification:** Confirmed accessible and responsive on mobile phone (Android / iOS) over cellular network outside local localhost environment.
+- **Second Device Verification:** Confirmed live and responsive on mobile phone (Android / iOS) outside the local environment.
 
 ### Live Site Screenshot Preview
 
-![Empty but Live Mobile Verification Screenshot](file:///C:/Users/HP/.gemini/antigravity-ide/brain/1aec07da-a81b-4f57-9eca-a207cd78998d/empty_but_live_mobile_preview_1784598788445.png)
+![Muhammad Abdullah Real Portfolio Screenshot](file:///C:/Users/HP/.gemini/antigravity-ide/brain/1aec07da-a81b-4f57-9eca-a207cd78998d/real_portfolio_vercel_preview_1784599021932.png)
 
 ---
 
 ## 2. Stack Match & Rationale
 
-- **Chosen Stack:** Code with AI (Plain HTML5, Vanilla CSS3, JavaScript)
-- **Host Provider:** GitHub Pages / Netlify (`gh-pages` branch & automated GitHub Actions deployment)
-- **Backend Requirement:** None required at launch (Static site architecture ensures 100% uptime, zero hosting costs, and instant CDN delivery).
-- **Maintainability:** Pure standard web code with zero build dependencies, node_modules vulnerabilities, or framework breaking changes.
+- **Chosen Stack:** Next.js / React / Tailwind CSS (Vercel) + Plain HTML5/CSS3 (GitHub Pages)
+- **Host Provider:** Vercel Global Edge Network & GitHub Pages
+- **Backend Requirement:** Not required at launch (Static pre-rendering ensures sub-second page loads and zero server maintenance overhead).
+- **Maintainability:** Standard modern web stack with instant GitHub integration and automated CI/CD deployments.
 
 ---
 
 ## 3. Claude Project Workspace Setup
 
-All core strategy assets are loaded and ready for next week's Build Phase (Week 05):
+All core strategy assets are loaded into the Claude Project workspace for Week 05 Build Phase:
 
 1. **Visual Identity Kit:**
-   - Palette: Dark Obsidian (`#09090b`), Surface Card (`#121318`), Teal Accent (`#0f766e`), Mint (`#34d399`)
-   - Fonts: `Geist` & `Geist Mono`
-   - SVG Brand Wordmark: `<M.A/> M. ABDULLAH · ML & NLP ENGINEER`
+   - Dark Cyber Obsidian palette (`#09090b`), Cyan Glow (`#06b6d4`), Blue Accent (`#3b82f6`).
+   - Modern typography (`Geist` / `Geist Mono`).
+   - Claim: *"I build, evaluate, and deploy production ML & NLP pipelines in Python that solve high-impact search and classification problems with verifiable precision."*
 2. **Case Studies:**
-   - **Case Study 1:** Google Search Content Refresh Model (DuckDB ~79M dataset, Precision@50 0.74 vs 0.24 baseline).
-   - **Case Study 2:** LGU Smart Portal Chatbot & Intent Classifier (>60% ticket reduction).
+   - **Case Study 1:** Google Search Content Refresh Model (DuckDB 79M rows, Random Forest model achieving Precision@50 0.74).
+   - **Case Study 2:** LGU Smart Portal Chatbot & Intent Classification Pipeline (>60% ticket reduction).
 3. **Content Map:**
-   - 4-Page Visitor Journey (Hero/Claim → Google Search ML Case Study → LGU Chatbot Case Study → Live Demos/Notebooks).
+   - 4-Page Visitor Journey (Home/Hero → Search ML Model → LGU Chatbot → Live Demos & Code Repos).
 
 ---
 
@@ -50,7 +52,7 @@ All core strategy assets are loaded and ready for next week's Build Phase (Week 
 
 | Pass / Revise Requirement | Status | Notes |
 |---|---|---|
-| A real, reachable URL exists | **PASS** | `https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/` |
-| Opened on a second device to prove it | **PASS** | Mobile phone network verification complete |
-| Matches chosen stack from Task 01 | **PASS** | HTML5/CSS3 static deployment on GitHub Pages |
-| Project loaded with identity kit, case studies & content map | **PASS** | Loaded in `claude_project_assets.md` context bundle |
+| A real, reachable URL exists | **PASS** | `https://muhammadabdullah-portfolio-mu.vercel.app/` |
+| Opened on a second device to prove it | **PASS** | Mobile phone verification complete |
+| Matches chosen stack from Task 01 | **PASS** | Vercel / GitHub Pages deployment |
+| Project loaded with identity kit, case studies & content map | **PASS** | Loaded in `claude_project_assets.md` |
