@@ -1,0 +1,220 @@
+{
+  "name": "Source-Grounded Research & Briefing Pipeline (5-Step)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "research-brief-pipeline",
+        "options": {}
+      },
+      "name": "Webhook Trigger (New Research Input)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a Source Fact Extractor. Your task is to analyze the raw input text or document and extract strictly verified facts, statistics, direct quotes, source URLs, and key entities. Output JSON format only with keys: raw_title, extracted_facts (array), key_quotes (array), entities (array), metadata."
+            },
+            {
+              "role": "user",
+              "content": "Extract source facts from the following raw content:\n\n{{ $json.body.raw_input }}"
+            }
+          ]
+        }
+      },
+      "name": "Step 1: Gather & Extract Facts",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [
+        320,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a Research Synthesizer & Outline Architect. Given extracted facts and quotes, group facts into 3-4 thematic pillars, define key technical arguments, and create a structured output outline. Output JSON format with keys: thematic_pillars (array of {pillar_name, facts_included}), proposed_structure (array of section titles), key_takeaways (array)."
+            },
+            {
+              "role": "user",
+              "content": "Synthesize the following extracted facts into an outline:\n\n{{ $json.message.content }}"
+            }
+          ]
+        }
+      },
+      "name": "Step 2: Synthesize & Outline",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [
+        540,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a Technical Writer. Write a comprehensive, source-grounded initial draft brief based on the provided outline and facts. Ground every assertion in the source data. Output full draft markdown."
+            },
+            {
+              "role": "user",
+              "content": "Write the initial brief draft using this outline and synthesis:\n\nOUTLINE:\n{{ $json.message.content }}\n\nRAW FACTS:\n{{ $('Step 1: Gather & Extract Facts').item.json.message.content }}"
+            }
+          ]
+        }
+      },
+      "name": "Step 3: First Pass Draft Generation",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [
+        760,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are an Adversarial Fact-Checker & Editor. Audit the draft against original facts. Identify: 1) Hallucinations or unsupported claims, 2) Tone or clarity issues, 3) Missing source context. Assign a Quality Score (1-100) and provide bulleted required revisions."
+            },
+            {
+              "role": "user",
+              "content": "Audit this draft against original facts:\n\nDRAFT:\n{{ $json.message.content }}\n\nORIGINAL FACTS:\n{{ $('Step 1: Gather & Extract Facts').item.json.message.content }}"
+            }
+          ]
+        }
+      },
+      "name": "Step 4: Adversarial Audit & Critique",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [
+        980,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a Master Publisher & Formatter. Apply the audit critiques to produce the final polished publication-ready markdown research brief. Include Executive Summary, Detailed Analysis, Key Quotes, Audit Quality Score badge, and Footnote Citations."
+            },
+            {
+              "role": "user",
+              "content": "Produce the final publication brief incorporating these audit revisions:\n\nAUDIT FEEDBACK:\n{{ $json.message.content }}\n\nDRAFT:\n{{ $('Step 3: First Pass Draft Generation').item.json.message.content }}"
+            }
+          ]
+        }
+      },
+      "name": "Step 5: Revise & Format Final Brief",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "channel": "#research-briefs",
+        "text": "=🚀 *New Research Brief Generated!*\n\n*Topic:* {{ $('Step 1: Gather & Extract Facts').item.json.message.content.raw_title || 'Industry Brief' }}\n\n*Audit Score:* {{ $('Step 4: Adversarial Audit & Critique').item.json.message.content.quality_score || 'Passed' }}\n\n*Final Brief:* \n{{ $json.message.content }}"
+      },
+      "name": "Slack Notification (Human Review Handoff)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [
+        1420,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger (New Research Input)": {
+      "main": [
+        [
+          {
+            "node": "Step 1: Gather & Extract Facts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step 1: Gather & Extract Facts": {
+      "main": [
+        [
+          {
+            "node": "Step 2: Synthesize & Outline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step 2: Synthesize & Outline": {
+      "main": [
+        [
+          {
+            "node": "Step 3: First Pass Draft Generation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step 3: First Pass Draft Generation": {
+      "main": [
+        [
+          {
+            "node": "Step 4: Adversarial Audit & Critique",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step 4: Adversarial Audit & Critique": {
+      "main": [
+        [
+          {
+            "node": "Step 5: Revise & Format Final Brief",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Step 5: Revise & Format Final Brief": {
+      "main": [
+        [
+          {
+            "node": "Slack Notification (Human Review Handoff)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
