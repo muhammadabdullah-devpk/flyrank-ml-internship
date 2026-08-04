@@ -1,0 +1,79 @@
+{
+  "total_pages_evaluated": 30000,
+  "p1_critical_count": 500,
+  "p2_high_count": 1500,
+  "p3_medium_count": 3000,
+  "p4_low_count": 25000,
+  "action_distribution": {
+    "EDITORIAL_REVIEW": 14408,
+    "TITLE_META_RESTRUCTURE": 11039,
+    "COMPREHENSIVE_REFRESH": 4531,
+    "UX_CRO_OPTIMIZATION": 22
+  },
+  "reason_code_counts": {
+    "MODEL_SCORE_ELEVATED": 14408,
+    "SERP_DECAY_CANDIDATE": 4526,
+    "HIGH_CTR_LOW_POSITION": 4401,
+    "STAGNANT_HIGH_POTENTIAL": 2431,
+    "SERP_DECAY_CANDIDATE | HIGH_CTR_LOW_POSITION": 1480,
+    "HIGH_CTR_LOW_POSITION | STAGNANT_HIGH_POTENTIAL": 1402,
+    "SERP_DECAY_CANDIDATE | STAGNANT_HIGH_POTENTIAL": 783,
+    "SERP_DECAY_CANDIDATE | HIGH_CTR_LOW_POSITION | STAGNANT_HIGH_POTENTIAL": 460,
+    "LOW_ENGAGEMENT_RISK": 22,
+    "HIGH_CTR_LOW_POSITION | LOW_ENGAGEMENT_RISK": 22
+  },
+  "intended_use": {
+    "primary_users": [
+      "FlyRank Content Editors & Strategists",
+      "SEO Program Managers",
+      "Digital Publishing Operations Teams"
+    ],
+    "operational_scope": [
+      "Prioritizing monthly editorial content refresh queues",
+      "Identifying decaying search traffic assets before core rank collapse",
+      "Allocating copywriter resources to high-ROI existing content updates"
+    ],
+    "out_of_scope_and_limits": [
+      "Brand and Navigational Queries: High brand-affinity pages must not be flagged solely for position drops.",
+      "Seasonal Peak Content: E-commerce or holiday pages experiencing seasonal low-months are excluded from decay triggers.",
+      "Newly Published Pages (< 90 Days): Content still in search indexing/sandbox phase is excluded.",
+      "Causal Directives: The score flags priority for human inspection; it does not guarantee rank increase."
+    ]
+  },
+  "review_protocol": {
+    "human_review_workflow": [
+      "Step 1: Editor inspects P1/P2 items in the ranked queue.",
+      "Step 2: Cross-checks Reason Codes against live Search Console & SERP intent.",
+      "Step 3: Confirms editorial quality, entity accuracy, and brand alignment.",
+      "Step 4: Executes targeted refresh (e.g. update stats, rewrite intro, improve depth).",
+      "Step 5: Logs refresh execution timestamp in FlyRank CMS."
+    ],
+    "no_go_automation_list": [
+      "NO-GO 1: Automated Page Deletions or 301 Redirects without human sign-off.",
+      "NO-GO 2: Auto-publishing AI-generated text directly to production without editorial review.",
+      "NO-GO 3: Automatic modification of URL slugs or canonical tags.",
+      "NO-GO 4: Altering legal, compliance, or medical/YMYL content without domain expert review."
+    ],
+    "cost_value_matrix": {
+      "High Value / Low Effort": "Title & Meta Restructure (P1 queue items with HIGH_CTR_LOW_POSITION)",
+      "High Value / High Effort": "Comprehensive Content Expansion (P1 items with SERP_DECAY_CANDIDATE)",
+      "Low Value / High Effort": "Full rewrite of low-impression niche pages (Deferred / Backlog)"
+    }
+  },
+  "monitoring_config": {
+    "metric_thresholds": {
+      "precision_at_50_min": 0.6,
+      "precision_at_100_min": 0.55,
+      "lift_over_baseline_min": 2.0
+    },
+    "drift_indicators": [
+      "Population Stability Index (PSI) > 0.25 on feature distributions (e.g. ctr, avg_position).",
+      "Google Search Engine Layout Shift: Widespread introduction of SERP AI Overviews altering baseline CTRs.",
+      "Refresh conversion degradation: P1 refresh actions yield < 40% rank recovery over 60 days."
+    ],
+    "retrain_schedule": {
+      "cadence": "Monthly automated retrain pipeline execution.",
+      "event_driven": "Trigger immediate retrain upon confirmed Google Core Algorithm Update release."
+    }
+  }
+}
