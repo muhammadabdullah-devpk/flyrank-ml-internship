@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-https://github.com/muhammadabdullah-devpk/flyrank-ml-internship
-=======
 https://muhammadabdullah-devpk.github.io/flyrank-ml-internship/
->>>>>>> 39c2ebd (feat(w07-t02): complete Content Action Playbook notebook and deploy capstone research paper showcase web app)
