@@ -102,9 +102,9 @@
     </div>
 
     <div class="abstract-box">
-      <div class="abstract-title">✦ Executive Abstract</div>
+      <div class="abstract-title">✦ Executive Abstract · FlyRank Case Study</div>
       <p class="abstract-text">
-        Digital publishing platforms face severe search traffic decay when legacy content loses keyword rank positioning without timely editorial updates. In this research, we construct an end-to-end decision-support pipeline evaluated on <strong>30,000 anonymized search page records</strong> sampled from a <strong>79M-row DuckDB production warehouse</strong>. We evaluate a transparent rule-based baseline against Logistic Regression and Random Forest models under strict <strong>5-Fold Grouped Client Cross-Validation (GroupKFold by client_id)</strong> to prevent intra-client data leakage. The Random Forest model achieves a <strong>Precision@50 of 0.74 — a 3.08× lift over the hand-rule baseline of 0.24</strong> — with an out-of-sample ROC-AUC of 0.812. Finally, we translate calibrated model probabilities into an operational Content Action Playbook featuring human-interpretable reason codes, cost-value prioritization matrices, strict no-go automation boundaries, and quantitative retrain triggers.
+        In this case study grounded in FlyRank's organic search operations, digital publishing platforms face severe traffic decay when legacy content loses keyword rank positioning without timely editorial updates. Traditional heuristic rules (e.g., flagging any page older than 6 months) generate a ~76% false-positive rate, overwhelming editorial bandwidth while missing high-value decaying assets. We construct an end-to-end decision-support pipeline evaluated on <strong>30,000 anonymized search page records</strong> sampled from FlyRank's <strong>79M-row DuckDB production warehouse</strong>. To eliminate intra-client data leakage, models are benchmarked under strict <strong>5-Fold Grouped Client Cross-Validation (GroupKFold by client_id)</strong>. Our Random Forest classifier achieves a <strong>Precision@50 of 0.74 — a 3.08× precision lift over the hand-rule baseline (0.24)</strong> — with an out-of-sample ROC-AUC of 0.812. Finally, we translate calibrated probabilities into an operational Content Action Playbook with interpretable reason codes, cost-value prioritization matrices, strict no-go automation boundaries, and quantitative retrain triggers.
       </p>
     </div>
   </header>
@@ -148,8 +148,15 @@
       <h2 class="section-title">Problem Framing &amp; Search Decision System</h2>
     </div>
 
+    <div class="callout callout-success" style="margin-bottom: 24px;">
+      <div class="callout-title">📌 Case Study Context: FlyRank's Content Decay Problem</div>
+      <p style="margin-top: 8px; font-size: 0.95rem; line-height: 1.7;">
+        FlyRank manages organic search performance across thousands of digital articles. When articles lose ranking due to SERP layout shifts, competitor activity, or algorithm updates, editorial teams must intervene. However, manual content auditing across large multi-domain portfolios is cost-prohibitive. This case study addresses FlyRank's core editorial bottleneck: building a machine learning decision-support system that ranks decaying pages with high precision in public-safe language, allowing human editors to focus limited refresh hours where expected traffic recovery ROI is highest.
+      </p>
+    </div>
+
     <p class="paragraph">
-      Organic search traffic is the lifeblood of content publishers, yet individual page performance naturally decays over time due to search engine algorithm updates, shifting user search intent, and aggressive competitor publishing. Traditional editorial workflows rely on manual intuition or naive heuristic rules — such as <em>"flag any article older than 6 months"</em>. These naive rules fail in production because they create massive false-positive volume, overwhelming editorial staff with low-impact pages while missing high-volume assets suffering subtle positioning drops.
+      Organic search traffic is the lifeblood of content publishers, yet individual page performance naturally decays over time due to search engine algorithm updates, shifting user search intent, and aggressive competitor publishing. Traditional editorial workflows rely on manual intuition or naive heuristic rules — such as <em>"flag any article older than 6 months"</em>. These naive rules fail in production because they create massive false-positive volume (~76%), overwhelming editorial staff with low-impact pages while missing high-volume assets suffering subtle positioning drops.
     </p>
 
     <div class="callout callout-important">
